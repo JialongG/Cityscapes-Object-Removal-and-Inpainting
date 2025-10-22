@@ -1,0 +1,17 @@
+torch==2.9.1
+torchvision==0.24.1
+tqdm==4.67.1
+numpy
+pillow
+matplotlib
+pyyaml
+opencv-python
+diffusers
+transformers
+accelerate
+safetensors
+sentencepiece
+peft
+einops
+timm
+segment-anything
