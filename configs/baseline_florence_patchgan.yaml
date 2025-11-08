@@ -1,0 +1,10 @@
+input_dir: ./samples/input
+glob: "*.png"
+output_dir: ./outputs/baseline_florence_patchgan
+patchgan_checkpoint: ./checkpoints/gan_generator_head_3.pth
+# Optional: set sam_checkpoint to a segment_anything .pth file to enable SAM mask refinement.
+# Leave null (or comment out) to skip SAM and rely on Florence polygons only.
+sam_checkpoint: null
+sam_model_type: vit_h
+florence_model_id: microsoft/Florence-2-large
+prompt: "segment every car separately, output each car as an individual instance"
