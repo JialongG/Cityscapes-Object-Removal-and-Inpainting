@@ -1,0 +1,13 @@
+input_dir: ./samples/input
+glob: "*.png"
+output_dir: ./outputs/core_sdxl_clora
+seg_checkpoint: ./checkpoints/deeplab_cityscapes_full_model_3.pth
+sdxl_model_id: diffusers/stable-diffusion-xl-1.0-inpainting-0.1
+lora_path: ./checkpoints/lora.safetensors
+class_id: 13
+prompt: "clean realistic city street background, no vehicles"
+negative_prompt: "car, vehicle, truck, bus, low quality, artifact"
+guidance_scale: 7.5
+steps: 30
+strength: 0.99
+seed: 42
