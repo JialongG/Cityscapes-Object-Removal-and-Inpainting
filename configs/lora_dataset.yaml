@@ -1,0 +1,7 @@
+cityscapes_leftimg_root: ./data/cityscapes/leftImg8bit
+seg_checkpoint: ./checkpoints/deeplab_cityscapes_full_model_3.pth
+filtered_output_dir: ./outputs/filtered_no_car
+lora_dataset_dir: ./outputs/lora_dataset
+class_id: 13
+max_images: 50
+caption_text: "clean street background, no vehicles, empty road, realistic city environment"
